@@ -170,8 +170,13 @@
     <div class="scrim" id="scrim" hidden></div>
     <aside class="tray" id="tray" aria-label="Pesanan kamu" aria-hidden="true">
         <div class="tray-head"><h3>Pesanan kamu</h3><button class="x" id="closeCart" aria-label="Tutup">✕</button></div>
+        @if ($staticDemo)
+        {{-- Versi demo statis (GitHub Pages): tidak ada server, pesanan langsung ke WhatsApp --}}
+        <form id="orderForm" style="display:contents">
+        @else
         <form method="POST" action="{{ route('orders.store') }}" id="orderForm" style="display:contents">
             @csrf
+        @endif
             @if ($errors->any())
                 <div class="alert" role="alert">{{ $errors->first() }}</div>
             @endif
@@ -189,7 +194,11 @@
             </label>
             <div class="total"><span>Total</span><span class="num" id="total">Rp0</span></div>
             <button type="submit" class="btn primary wa" id="wa" disabled>Kirim pesanan via WhatsApp</button>
-            <p class="note">Pesanan disimpan, lalu WhatsApp terbuka dengan pesan otomatis. Nomor kedai: {{ $cafeWhatsappDisplay }}.</p>
+            @if ($staticDemo)
+                <p class="note">Versi demo: WhatsApp terbuka dengan pesan otomatis (pesanan tidak disimpan). Nomor kedai: {{ $cafeWhatsappDisplay }} (contoh).</p>
+            @else
+                <p class="note">Pesanan disimpan, lalu WhatsApp terbuka dengan pesan otomatis. Nomor kedai: {{ $cafeWhatsappDisplay }}.</p>
+            @endif
         </form>
     </aside>
 @endsection
@@ -266,5 +275,22 @@ $("scrim").onclick = () => setTray(false);
 document.addEventListener("keydown", e => { if (e.key === "Escape") setTray(false); });
 render();
 @if ($errors->any()) setTray(true); @endif
+@if ($staticDemo)
+// Demo statis: susun pesan WhatsApp di browser karena tidak ada server untuk menyimpan pesanan
+$("orderForm").addEventListener("submit", e => {
+  e.preventDefault();
+  const ids = Object.keys(cart);
+  if (!ids.length) return;
+  const nama = $("nama").value.trim();
+  if (!nama) { $("nama").focus(); return; }
+  const total = ids.reduce((s,k)=>s+cart[k]*MENU[k].price,0);
+  const msg = `Halo Bari Coffee, saya ${nama} mau pesan:\n`
+    + ids.map(k => `- ${cart[k]}x ${MENU[k].name} (${rp(MENU[k].price*cart[k])})`).join("\n")
+    + `\nTotal: ${rp(total)}\nDiambil: ${$("ambil").value}`;
+  window.open(@json('https://wa.me/'.$cafeWhatsapp) + "?text=" + encodeURIComponent(msg), "_blank", "noopener");
+  cart = {}; render(); setTray(false);
+  window.bariToast?.("WhatsApp dibuka · keranjang dikosongkan");
+});
+@endif
 </script>
 @endpush

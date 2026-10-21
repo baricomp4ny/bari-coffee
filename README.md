@@ -4,6 +4,9 @@ Website kedai kopi dengan pemesanan online lewat WhatsApp dan panel admin. Diban
 
 Pelanggan memilih menu, mengisi nama dan jam ambil, lalu pesanannya tersimpan di database dan WhatsApp terbuka dengan pesan berisi detail pesanan dan nomor order. Pengelola kedai mengatur menu, kategori, dan status pesanan dari panel admin.
 
+**🔗 Demo:** https://baricomp4ny.github.io/bari-coffee/
+Demo ini versi statis (GitHub Pages): tampilan, filter menu, dan keranjang berjalan penuh, pesanan langsung dikirim ke WhatsApp tanpa disimpan, dan panel admin tidak tersedia. Versi lengkap dijalankan dengan Laravel (lihat di bawah).
+
 ## Fitur
 
 **Situs pelanggan**
@@ -70,6 +73,17 @@ Untuk mengisi dashboard dengan pesanan contoh 7 hari terakhir (misalnya untuk pr
 ```bash
 php artisan db:seed --class=DemoOrderSeeder
 ```
+
+## Memperbarui demo statis
+
+Demo di GitHub Pages dibuat dari folder `docs/`. Setelah menu diubah, buat ulang lalu push:
+
+```bash
+php artisan demo:export          # menulis docs/index.html + css/js dari data menu di database
+git add docs && git commit -m "Perbarui demo" && git push
+```
+
+GitHub Pages diatur sekali di **Settings → Pages → Deploy from a branch → `main` / `/docs`**.
 
 ## Tes
 

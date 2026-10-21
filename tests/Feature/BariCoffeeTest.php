@@ -74,6 +74,26 @@ class BariCoffeeTest extends TestCase
         $this->assertSame(0, Order::count());
     }
 
+    public function test_ekspor_demo_statis(): void
+    {
+        $path = 'storage/framework/testing/demo';
+
+        $this->artisan('demo:export', ['--path' => $path])->assertSuccessful();
+
+        $html = file_get_contents(base_path("{$path}/index.html"));
+        $this->assertStringContainsString('Es Kopi Gula Aren', $html);
+        $this->assertStringContainsString('href="./css/bari.css', $html);
+        $this->assertStringContainsString('src="./js/bari.js', $html);
+        $this->assertStringContainsString('Lihat kode di GitHub', $html);
+        $this->assertStringNotContainsString('csrf-token', $html);
+        $this->assertStringNotContainsString('name="_token"', $html);
+        $this->assertStringNotContainsString('/pesanan', $html);
+        $this->assertFileExists(base_path("{$path}/css/bari.css"));
+        $this->assertFileExists(base_path("{$path}/.nojekyll"));
+
+        \Illuminate\Support\Facades\File::deleteDirectory(base_path($path));
+    }
+
     public function test_halaman_admin_wajib_login(): void
     {
         $this->get('/admin')->assertRedirect('/admin/login');

@@ -27,6 +27,9 @@ class AppServiceProvider extends ServiceProvider
         View::share('cafeWhatsapp', $number);
         View::share('cafeWhatsappDisplay', implode('-', [substr($local, 0, 4), substr($local, 4, 4), substr($local, 8)]));
 
+        // true hanya saat ekspor demo statis (php artisan demo:export)
+        View::share(['staticDemo' => false, 'demoRepoUrl' => null]);
+
         // Jumlah pesanan berstatus "baru" untuk badge di sidebar admin
         View::composer('layouts.admin', fn ($view) => $view->with('newOrderCount', Order::where('status', 'baru')->count()));
     }

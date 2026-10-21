@@ -1,0 +1,1167 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+        <title>Bari Coffee</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Poppins:wght@400;500;600;700&display=swap">
+    <link rel="stylesheet" href="./css/bari.css?v=1792387931">
+    </head>
+<body class="">
+<div class="wrap" id="top">
+    <nav>
+        <a class="logo" href=".#top">
+    <span class="logo-name">Bari Coffee <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" class="ico logo-ico">
+                <path d="M4 9h12v4a5 5 0 0 1-5 5H9a5 5 0 0 1-5-5V9Z"/><path d="M16 10h1.5a2.5 2.5 0 0 1 0 5H16"/><path d="M3 21h15"/><path d="M8 3c-.8 1 .8 2 0 3M12 3c-.8 1 .8 2 0 3"/>
+            </svg>
+</span>
+    <span class="logo-tag">Diseduh pelan, sejak 2021.</span></a>
+        <div class="navlinks">
+            <a href=".#top" class="">Beranda</a>
+            <a href=".#menu">Menu</a>
+            <a href=".#tentang">Tentang</a>
+            <a href=".#kontak">Kontak</a>
+        </div>
+            <button class="cart-btn" id="openCart" aria-label="Buka pesanan">Pesanan <b id="count">0</b></button>
+    </nav>
+
+        
+    <header class="hero">
+        <div>
+            <h1><span>Kopi Lokal</span><span>Terbaik Untukmu</span></h1>
+            <p>Arabika Gunung Halu dan Kerinci, disangrai sendiri setiap Senin. Pilih menu, kami siapkan, kamu tinggal ambil di kedai.</p>
+            <a class="btn primary" href="#menu">Lihat Menu</a>
+            <div class="quick" aria-label="Lompat ke kategori">
+                                    <button type="button" data-jump="kopi" title="Kopi" aria-label="Lihat Kopi">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" class="ico">
+                <path d="M4 9h12v4a5 5 0 0 1-5 5H9a5 5 0 0 1-5-5V9Z"/><path d="M16 10h1.5a2.5 2.5 0 0 1 0 5H16"/><path d="M3 21h15"/><path d="M8 3c-.8 1 .8 2 0 3M12 3c-.8 1 .8 2 0 3"/>
+            </svg>
+                    </button>
+                                    <button type="button" data-jump="manual-brew" title="Manual Brew" aria-label="Lihat Manual Brew">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" class="ico">
+                <path d="M5 6h14l-4 8H9L5 6Z"/><path d="M9 14v2h6v-2"/><path d="M7 20h10"/><path d="M12 16v4"/><path d="M8 3h8"/>
+            </svg>
+                    </button>
+                                    <button type="button" data-jump="non-kopi" title="Non-Kopi" aria-label="Lihat Non-Kopi">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" class="ico">
+                <path d="M6 4h12l-1.5 15a2 2 0 0 1-2 2h-5a2 2 0 0 1-2-2L6 4Z"/><path d="M6.6 10h10.8"/><path d="M14 2l-1 8"/>
+            </svg>
+                    </button>
+                                    <button type="button" data-jump="camilan" title="Camilan" aria-label="Lihat Camilan">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" class="ico">
+                <path d="M4 15c0-5 4-9 8-9s8 4 8 9c-2-1.5-4-1.5-5.5 0-1-2-4-2-5 0C8 13.5 6 13.5 4 15Z"/><path d="M9 9.5l1 4M15 9.5l-1 4"/>
+            </svg>
+                    </button>
+                            </div>
+        </div>
+        <div class="hero-cup">
+            <svg viewBox="0 0 200 200" aria-hidden="true" class="cup-art">
+    <defs>
+        <radialGradient id="cGxEOgDs" cx="45%" cy="40%" r="65%">
+            <stop offset="0" stop-color="#FFFFFF"/><stop offset=".75" stop-color="#F4EFEA"/><stop offset="1" stop-color="#DCD3CB"/>
+        </radialGradient>
+        <radialGradient id="cGxEOgDk" cx="50%" cy="50%" r="50%">
+            <stop offset="0" stop-color="#EAD2AE"/><stop offset=".55" stop-color="#EAD2AE" stop-opacity=".85"/><stop offset="1" stop-color="#B98654"/>
+        </radialGradient>
+    </defs>
+            <circle cx="100" cy="100" r="96" fill="url(#cGxEOgDs)"/>
+                    <rect x="146" y="132" width="46" height="24" rx="12" transform="rotate(38 146 132)" fill="#FAF8F5" stroke="#E2DAD2"/>
+                <circle cx="100" cy="100" r="70" fill="#FCFBF9" stroke="#E6DFD8" stroke-width="1.5"/>
+        <circle cx="100" cy="100" r="58" fill="url(#cGxEOgDk)"/>
+        <g fill="#6A3014">
+                            <path d="M100 132 C 66 108, 60 84, 76 72 C 88 63, 100 72, 100 82 C 100 72, 112 63, 124 72 C 140 84, 134 108, 100 132 Z" opacity=".95"/>
+                    </g>
+    </svg>
+        </div>
+    </header>
+
+    
+            <section class="featured" aria-label="Menu unggulan">
+                            <article class="fcard">
+                    <div class="cup-wrap">
+                        <svg viewBox="0 0 200 200" aria-hidden="true" class="cup-art">
+    <defs>
+        <radialGradient id="cZ7BOl7s" cx="45%" cy="40%" r="65%">
+            <stop offset="0" stop-color="#FFFFFF"/><stop offset=".75" stop-color="#F4EFEA"/><stop offset="1" stop-color="#DCD3CB"/>
+        </radialGradient>
+        <radialGradient id="cZ7BOl7k" cx="50%" cy="50%" r="50%">
+            <stop offset="0" stop-color="#9DB7A2"/><stop offset=".55" stop-color="#9DB7A2" stop-opacity=".85"/><stop offset="1" stop-color="#5E3418"/>
+        </radialGradient>
+    </defs>
+            <circle cx="100" cy="100" r="96" fill="url(#cZ7BOl7s)"/>
+                <circle cx="100" cy="100" r="70" fill="#FCFBF9" stroke="#E6DFD8" stroke-width="1.5"/>
+        <circle cx="100" cy="100" r="58" fill="url(#cZ7BOl7k)"/>
+        <g fill="#F7EBDB">
+                                                <path d="M70 128 C 70 119, 130 119, 130 128" fill="none" stroke="#F7EBDB" stroke-width="5" stroke-linecap="round"/>
+                                    <path d="M73 118 C 73 109, 127 109, 127 118" fill="none" stroke="#F7EBDB" stroke-width="5" stroke-linecap="round"/>
+                                    <path d="M76 108 C 76 99, 124 99, 124 108" fill="none" stroke="#F7EBDB" stroke-width="5" stroke-linecap="round"/>
+                                    <path d="M79 98 C 79 89, 121 89, 121 98" fill="none" stroke="#F7EBDB" stroke-width="5" stroke-linecap="round"/>
+                                    <path d="M82 88 C 82 79, 118 79, 118 88" fill="none" stroke="#F7EBDB" stroke-width="5" stroke-linecap="round"/>
+                                    <path d="M86 78 C 86 69, 114 69, 114 78" fill="none" stroke="#F7EBDB" stroke-width="5" stroke-linecap="round"/>
+                                <ellipse cx="100" cy="64" rx="9" ry="8"/>
+                <path d="M100 58 V 140" stroke="#F7EBDB" stroke-width="2.5"/>
+                    </g>
+    </svg>
+                    </div>
+                    <h3>V60 Kerinci</h3>
+                    <p>Fruity, aroma jeruk. Seduh 1:15, 3 menit.</p>
+                    <div class="acts">
+                        <button type="button" class="icon-btn add-btn" data-id="4" aria-label="Tambah V60 Kerinci ke pesanan">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" class="ico">
+                <path d="M3 4h2l2.2 10.5a1.5 1.5 0 0 0 1.5 1.2h8.6a1.5 1.5 0 0 0 1.5-1.1L20.5 8H6"/><circle cx="9.5" cy="19.5" r="1.3"/><circle cx="17" cy="19.5" r="1.3"/>
+            </svg>
+                        </button>
+                    </div>
+                    <span class="pill num">Rp28.000</span>
+                </article>
+                            <article class="fcard">
+                    <div class="cup-wrap">
+                        <svg viewBox="0 0 200 200" aria-hidden="true" class="cup-art">
+    <defs>
+        <radialGradient id="cfOigbCs" cx="45%" cy="40%" r="65%">
+            <stop offset="0" stop-color="#FFFFFF"/><stop offset=".75" stop-color="#F4EFEA"/><stop offset="1" stop-color="#DCD3CB"/>
+        </radialGradient>
+        <radialGradient id="cfOigbCk" cx="50%" cy="50%" r="50%">
+            <stop offset="0" stop-color="#B88B5E"/><stop offset=".55" stop-color="#B88B5E" stop-opacity=".85"/><stop offset="1" stop-color="#2A170C"/>
+        </radialGradient>
+    </defs>
+            <circle cx="100" cy="100" r="96" fill="url(#cfOigbCs)"/>
+                <circle cx="100" cy="100" r="70" fill="#FCFBF9" stroke="#E6DFD8" stroke-width="1.5"/>
+        <circle cx="100" cy="100" r="58" fill="url(#cfOigbCk)"/>
+        <g fill="#F7EBDB">
+                            <ellipse cx="100" cy="72" rx="15" ry="11"/>
+                <path d="M74 96 C 80 80, 120 80, 126 96 C 116 90, 84 90, 74 96 Z"/>
+                <path d="M100 136 C 74 120, 68 104, 80 98 C 90 94, 100 100, 100 106 C 100 100, 110 94, 120 98 C 132 104, 126 120, 100 136 Z"/>
+                <path d="M100 66 V 140" stroke="#F7EBDB" stroke-width="2"/>
+                    </g>
+    </svg>
+                    </div>
+                    <h3>Americano</h3>
+                    <p>Double shot arabika Gunung Halu, panas atau dingin.</p>
+                    <div class="acts">
+                        <button type="button" class="icon-btn add-btn" data-id="2" aria-label="Tambah Americano ke pesanan">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" class="ico">
+                <path d="M3 4h2l2.2 10.5a1.5 1.5 0 0 0 1.5 1.2h8.6a1.5 1.5 0 0 0 1.5-1.1L20.5 8H6"/><circle cx="9.5" cy="19.5" r="1.3"/><circle cx="17" cy="19.5" r="1.3"/>
+            </svg>
+                        </button>
+                    </div>
+                    <span class="pill num">Rp18.000</span>
+                </article>
+                        <div class="intro">
+                <div class="eyebrow">Pilihan barista</div>
+                <h2>Secangkir yang bikin kamu balik lagi.</h2>
+                <p>Semua minuman diracik dari biji yang kami beli langsung dari petani. Tidak pakai sirup instan, gula aren pun kami masak sendiri.</p>
+                <a class="btn primary sm" href="#menu">Selengkapnya</a>
+            </div>
+        </section>
+    
+    
+            <section class="signature" id="andalan">
+            <div>
+                <div class="eyebrow">Racikan andalan</div>
+                <h2>Es Kopi Gula Aren, manisnya pas dan kopinya tetap terasa.</h2>
+                <p>Espresso, susu segar, gula aren cair dari Banten. Diseduh dari biji yang kami sangrai sendiri setiap Senin, jadi rasanya selalu segar.</p>
+                <div class="recipe">
+                    <div><span>Espresso double</span><span class="num">36 g</span></div>
+                    <div><span>Susu segar</span><span class="num">150 ml</span></div>
+                    <div><span>Rasio seduh</span><span class="num">1 : 2</span></div>
+                </div>
+                <button type="button" class="btn primary sm add-btn" data-id="1" data-open="1">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" class="ico">
+                <path d="M12 5v14M5 12h14"/>
+            </svg>
+ Pesan sekarang
+                </button>
+            </div>
+            <div class="sig-art">
+                <svg viewBox="0 0 400 400" aria-hidden="true" class="beans">
+            <g transform="translate(358.4 228.8) rotate(223) scale(0.82)">
+            <ellipse rx="9" ry="6.2" fill="#4A2817"/>
+            <path d="M-8 0 C -3 -3, 3 3, 8 0" stroke="#24120A" stroke-width="1.6" fill="none"/>
+        </g>
+            <g transform="translate(386.6 245.3) rotate(161) scale(1.03)">
+            <ellipse rx="9" ry="6.2" fill="#4A2817"/>
+            <path d="M-8 0 C -3 -3, 3 3, 8 0" stroke="#24120A" stroke-width="1.6" fill="none"/>
+        </g>
+            <g transform="translate(389.9 205) rotate(209) scale(0.99)">
+            <ellipse rx="9" ry="6.2" fill="#4A2817"/>
+            <path d="M-8 0 C -3 -3, 3 3, 8 0" stroke="#24120A" stroke-width="1.6" fill="none"/>
+        </g>
+            <g transform="translate(321.8 242.4) rotate(120) scale(1.02)">
+            <ellipse rx="9" ry="6.2" fill="#4A2817"/>
+            <path d="M-8 0 C -3 -3, 3 3, 8 0" stroke="#24120A" stroke-width="1.6" fill="none"/>
+        </g>
+            <g transform="translate(334 255.5) rotate(73) scale(0.86)">
+            <ellipse rx="9" ry="6.2" fill="#4A2817"/>
+            <path d="M-8 0 C -3 -3, 3 3, 8 0" stroke="#24120A" stroke-width="1.6" fill="none"/>
+        </g>
+            <g transform="translate(314 253.8) rotate(358) scale(1.07)">
+            <ellipse rx="9" ry="6.2" fill="#4A2817"/>
+            <path d="M-8 0 C -3 -3, 3 3, 8 0" stroke="#24120A" stroke-width="1.6" fill="none"/>
+        </g>
+            <g transform="translate(338.6 305.2) rotate(51) scale(0.99)">
+            <ellipse rx="9" ry="6.2" fill="#4A2817"/>
+            <path d="M-8 0 C -3 -3, 3 3, 8 0" stroke="#24120A" stroke-width="1.6" fill="none"/>
+        </g>
+            <g transform="translate(291.3 295.4) rotate(319) scale(1.08)">
+            <ellipse rx="9" ry="6.2" fill="#4A2817"/>
+            <path d="M-8 0 C -3 -3, 3 3, 8 0" stroke="#24120A" stroke-width="1.6" fill="none"/>
+        </g>
+            <g transform="translate(289.3 309.2) rotate(339) scale(1.04)">
+            <ellipse rx="9" ry="6.2" fill="#4A2817"/>
+            <path d="M-8 0 C -3 -3, 3 3, 8 0" stroke="#24120A" stroke-width="1.6" fill="none"/>
+        </g>
+            <g transform="translate(322.6 322.1) rotate(169) scale(0.88)">
+            <ellipse rx="9" ry="6.2" fill="#4A2817"/>
+            <path d="M-8 0 C -3 -3, 3 3, 8 0" stroke="#24120A" stroke-width="1.6" fill="none"/>
+        </g>
+            <g transform="translate(294.6 332.8) rotate(58) scale(0.82)">
+            <ellipse rx="9" ry="6.2" fill="#4A2817"/>
+            <path d="M-8 0 C -3 -3, 3 3, 8 0" stroke="#24120A" stroke-width="1.6" fill="none"/>
+        </g>
+            <g transform="translate(281.1 371.8) rotate(322) scale(0.82)">
+            <ellipse rx="9" ry="6.2" fill="#4A2817"/>
+            <path d="M-8 0 C -3 -3, 3 3, 8 0" stroke="#24120A" stroke-width="1.6" fill="none"/>
+        </g>
+            <g transform="translate(227.7 328) rotate(117) scale(0.91)">
+            <ellipse rx="9" ry="6.2" fill="#4A2817"/>
+            <path d="M-8 0 C -3 -3, 3 3, 8 0" stroke="#24120A" stroke-width="1.6" fill="none"/>
+        </g>
+            <g transform="translate(237.2 355.6) rotate(182) scale(0.95)">
+            <ellipse rx="9" ry="6.2" fill="#4A2817"/>
+            <path d="M-8 0 C -3 -3, 3 3, 8 0" stroke="#24120A" stroke-width="1.6" fill="none"/>
+        </g>
+            <g transform="translate(202.1 327) rotate(182) scale(0.8)">
+            <ellipse rx="9" ry="6.2" fill="#4A2817"/>
+            <path d="M-8 0 C -3 -3, 3 3, 8 0" stroke="#24120A" stroke-width="1.6" fill="none"/>
+        </g>
+            <g transform="translate(246.7 363.5) rotate(47) scale(1.12)">
+            <ellipse rx="9" ry="6.2" fill="#4A2817"/>
+            <path d="M-8 0 C -3 -3, 3 3, 8 0" stroke="#24120A" stroke-width="1.6" fill="none"/>
+        </g>
+            <g transform="translate(183.6 348.1) rotate(103) scale(1.03)">
+            <ellipse rx="9" ry="6.2" fill="#4A2817"/>
+            <path d="M-8 0 C -3 -3, 3 3, 8 0" stroke="#24120A" stroke-width="1.6" fill="none"/>
+        </g>
+            <g transform="translate(210 392.7) rotate(72) scale(1)">
+            <ellipse rx="9" ry="6.2" fill="#4A2817"/>
+            <path d="M-8 0 C -3 -3, 3 3, 8 0" stroke="#24120A" stroke-width="1.6" fill="none"/>
+        </g>
+            <g transform="translate(198.7 398) rotate(162) scale(0.84)">
+            <ellipse rx="9" ry="6.2" fill="#4A2817"/>
+            <path d="M-8 0 C -3 -3, 3 3, 8 0" stroke="#24120A" stroke-width="1.6" fill="none"/>
+        </g>
+            <g transform="translate(130.1 339.5) rotate(183) scale(0.84)">
+            <ellipse rx="9" ry="6.2" fill="#4A2817"/>
+            <path d="M-8 0 C -3 -3, 3 3, 8 0" stroke="#24120A" stroke-width="1.6" fill="none"/>
+        </g>
+            <g transform="translate(99.8 366.1) rotate(201) scale(0.91)">
+            <ellipse rx="9" ry="6.2" fill="#4A2817"/>
+            <path d="M-8 0 C -3 -3, 3 3, 8 0" stroke="#24120A" stroke-width="1.6" fill="none"/>
+        </g>
+            <g transform="translate(142.8 327.8) rotate(359) scale(1.03)">
+            <ellipse rx="9" ry="6.2" fill="#4A2817"/>
+            <path d="M-8 0 C -3 -3, 3 3, 8 0" stroke="#24120A" stroke-width="1.6" fill="none"/>
+        </g>
+            <g transform="translate(123.8 330.4) rotate(191) scale(0.95)">
+            <ellipse rx="9" ry="6.2" fill="#4A2817"/>
+            <path d="M-8 0 C -3 -3, 3 3, 8 0" stroke="#24120A" stroke-width="1.6" fill="none"/>
+        </g>
+            <g transform="translate(61.4 322.5) rotate(343) scale(1.05)">
+            <ellipse rx="9" ry="6.2" fill="#4A2817"/>
+            <path d="M-8 0 C -3 -3, 3 3, 8 0" stroke="#24120A" stroke-width="1.6" fill="none"/>
+        </g>
+            <g transform="translate(57.7 298.5) rotate(304) scale(1.15)">
+            <ellipse rx="9" ry="6.2" fill="#4A2817"/>
+            <path d="M-8 0 C -3 -3, 3 3, 8 0" stroke="#24120A" stroke-width="1.6" fill="none"/>
+        </g>
+            <g transform="translate(91.6 306.6) rotate(251) scale(0.82)">
+            <ellipse rx="9" ry="6.2" fill="#4A2817"/>
+            <path d="M-8 0 C -3 -3, 3 3, 8 0" stroke="#24120A" stroke-width="1.6" fill="none"/>
+        </g>
+            <g transform="translate(90.8 279.4) rotate(275) scale(1.03)">
+            <ellipse rx="9" ry="6.2" fill="#4A2817"/>
+            <path d="M-8 0 C -3 -3, 3 3, 8 0" stroke="#24120A" stroke-width="1.6" fill="none"/>
+        </g>
+            <g transform="translate(57.7 281.6) rotate(64) scale(1)">
+            <ellipse rx="9" ry="6.2" fill="#4A2817"/>
+            <path d="M-8 0 C -3 -3, 3 3, 8 0" stroke="#24120A" stroke-width="1.6" fill="none"/>
+        </g>
+            <g transform="translate(48.6 295.5) rotate(145) scale(0.93)">
+            <ellipse rx="9" ry="6.2" fill="#4A2817"/>
+            <path d="M-8 0 C -3 -3, 3 3, 8 0" stroke="#24120A" stroke-width="1.6" fill="none"/>
+        </g>
+            <g transform="translate(45.1 283.5) rotate(304) scale(1.02)">
+            <ellipse rx="9" ry="6.2" fill="#4A2817"/>
+            <path d="M-8 0 C -3 -3, 3 3, 8 0" stroke="#24120A" stroke-width="1.6" fill="none"/>
+        </g>
+            <g transform="translate(50.9 260.7) rotate(151) scale(1.08)">
+            <ellipse rx="9" ry="6.2" fill="#4A2817"/>
+            <path d="M-8 0 C -3 -3, 3 3, 8 0" stroke="#24120A" stroke-width="1.6" fill="none"/>
+        </g>
+            <g transform="translate(57.8 233) rotate(335) scale(1)">
+            <ellipse rx="9" ry="6.2" fill="#4A2817"/>
+            <path d="M-8 0 C -3 -3, 3 3, 8 0" stroke="#24120A" stroke-width="1.6" fill="none"/>
+        </g>
+            <g transform="translate(8.2 171) rotate(115) scale(0.86)">
+            <ellipse rx="9" ry="6.2" fill="#4A2817"/>
+            <path d="M-8 0 C -3 -3, 3 3, 8 0" stroke="#24120A" stroke-width="1.6" fill="none"/>
+        </g>
+            <g transform="translate(48 153.3) rotate(59) scale(1.07)">
+            <ellipse rx="9" ry="6.2" fill="#4A2817"/>
+            <path d="M-8 0 C -3 -3, 3 3, 8 0" stroke="#24120A" stroke-width="1.6" fill="none"/>
+        </g>
+            <g transform="translate(55.1 154.2) rotate(79) scale(0.99)">
+            <ellipse rx="9" ry="6.2" fill="#4A2817"/>
+            <path d="M-8 0 C -3 -3, 3 3, 8 0" stroke="#24120A" stroke-width="1.6" fill="none"/>
+        </g>
+            <g transform="translate(37.1 181.3) rotate(319) scale(1.12)">
+            <ellipse rx="9" ry="6.2" fill="#4A2817"/>
+            <path d="M-8 0 C -3 -3, 3 3, 8 0" stroke="#24120A" stroke-width="1.6" fill="none"/>
+        </g>
+            <g transform="translate(54.6 159.3) rotate(316) scale(1.06)">
+            <ellipse rx="9" ry="6.2" fill="#4A2817"/>
+            <path d="M-8 0 C -3 -3, 3 3, 8 0" stroke="#24120A" stroke-width="1.6" fill="none"/>
+        </g>
+            <g transform="translate(36 110.2) rotate(358) scale(1.01)">
+            <ellipse rx="9" ry="6.2" fill="#4A2817"/>
+            <path d="M-8 0 C -3 -3, 3 3, 8 0" stroke="#24120A" stroke-width="1.6" fill="none"/>
+        </g>
+            <g transform="translate(80.5 109.3) rotate(34) scale(1.13)">
+            <ellipse rx="9" ry="6.2" fill="#4A2817"/>
+            <path d="M-8 0 C -3 -3, 3 3, 8 0" stroke="#24120A" stroke-width="1.6" fill="none"/>
+        </g>
+            <g transform="translate(62.8 72.9) rotate(261) scale(0.88)">
+            <ellipse rx="9" ry="6.2" fill="#4A2817"/>
+            <path d="M-8 0 C -3 -3, 3 3, 8 0" stroke="#24120A" stroke-width="1.6" fill="none"/>
+        </g>
+            <g transform="translate(97.6 89) rotate(46) scale(0.81)">
+            <ellipse rx="9" ry="6.2" fill="#4A2817"/>
+            <path d="M-8 0 C -3 -3, 3 3, 8 0" stroke="#24120A" stroke-width="1.6" fill="none"/>
+        </g>
+            <g transform="translate(99.6 111.3) rotate(140) scale(0.98)">
+            <ellipse rx="9" ry="6.2" fill="#4A2817"/>
+            <path d="M-8 0 C -3 -3, 3 3, 8 0" stroke="#24120A" stroke-width="1.6" fill="none"/>
+        </g>
+            <g transform="translate(134.3 56.3) rotate(312) scale(1.1)">
+            <ellipse rx="9" ry="6.2" fill="#4A2817"/>
+            <path d="M-8 0 C -3 -3, 3 3, 8 0" stroke="#24120A" stroke-width="1.6" fill="none"/>
+        </g>
+            <g transform="translate(105.3 38.7) rotate(88) scale(0.94)">
+            <ellipse rx="9" ry="6.2" fill="#4A2817"/>
+            <path d="M-8 0 C -3 -3, 3 3, 8 0" stroke="#24120A" stroke-width="1.6" fill="none"/>
+        </g>
+            <g transform="translate(131.8 44.3) rotate(204) scale(1.13)">
+            <ellipse rx="9" ry="6.2" fill="#4A2817"/>
+            <path d="M-8 0 C -3 -3, 3 3, 8 0" stroke="#24120A" stroke-width="1.6" fill="none"/>
+        </g>
+            <g transform="translate(167.5 15.8) rotate(283) scale(0.81)">
+            <ellipse rx="9" ry="6.2" fill="#4A2817"/>
+            <path d="M-8 0 C -3 -3, 3 3, 8 0" stroke="#24120A" stroke-width="1.6" fill="none"/>
+        </g>
+            <g transform="translate(181.3 81.5) rotate(39) scale(1.04)">
+            <ellipse rx="9" ry="6.2" fill="#4A2817"/>
+            <path d="M-8 0 C -3 -3, 3 3, 8 0" stroke="#24120A" stroke-width="1.6" fill="none"/>
+        </g>
+            <g transform="translate(193.5 30.1) rotate(140) scale(0.98)">
+            <ellipse rx="9" ry="6.2" fill="#4A2817"/>
+            <path d="M-8 0 C -3 -3, 3 3, 8 0" stroke="#24120A" stroke-width="1.6" fill="none"/>
+        </g>
+            <g transform="translate(173 51.4) rotate(144) scale(1.07)">
+            <ellipse rx="9" ry="6.2" fill="#4A2817"/>
+            <path d="M-8 0 C -3 -3, 3 3, 8 0" stroke="#24120A" stroke-width="1.6" fill="none"/>
+        </g>
+            <g transform="translate(253 14.4) rotate(113) scale(1)">
+            <ellipse rx="9" ry="6.2" fill="#4A2817"/>
+            <path d="M-8 0 C -3 -3, 3 3, 8 0" stroke="#24120A" stroke-width="1.6" fill="none"/>
+        </g>
+            <g transform="translate(214.6 8.6) rotate(325) scale(0.88)">
+            <ellipse rx="9" ry="6.2" fill="#4A2817"/>
+            <path d="M-8 0 C -3 -3, 3 3, 8 0" stroke="#24120A" stroke-width="1.6" fill="none"/>
+        </g>
+            <g transform="translate(259.6 86.7) rotate(159) scale(1.06)">
+            <ellipse rx="9" ry="6.2" fill="#4A2817"/>
+            <path d="M-8 0 C -3 -3, 3 3, 8 0" stroke="#24120A" stroke-width="1.6" fill="none"/>
+        </g>
+            <g transform="translate(239.1 60.4) rotate(2) scale(0.83)">
+            <ellipse rx="9" ry="6.2" fill="#4A2817"/>
+            <path d="M-8 0 C -3 -3, 3 3, 8 0" stroke="#24120A" stroke-width="1.6" fill="none"/>
+        </g>
+            <g transform="translate(253.3 87) rotate(12) scale(1.04)">
+            <ellipse rx="9" ry="6.2" fill="#4A2817"/>
+            <path d="M-8 0 C -3 -3, 3 3, 8 0" stroke="#24120A" stroke-width="1.6" fill="none"/>
+        </g>
+            <g transform="translate(281.1 22.7) rotate(178) scale(0.91)">
+            <ellipse rx="9" ry="6.2" fill="#4A2817"/>
+            <path d="M-8 0 C -3 -3, 3 3, 8 0" stroke="#24120A" stroke-width="1.6" fill="none"/>
+        </g>
+            <g transform="translate(264.5 98.8) rotate(253) scale(0.9)">
+            <ellipse rx="9" ry="6.2" fill="#4A2817"/>
+            <path d="M-8 0 C -3 -3, 3 3, 8 0" stroke="#24120A" stroke-width="1.6" fill="none"/>
+        </g>
+            <g transform="translate(326.8 89.8) rotate(254) scale(1.06)">
+            <ellipse rx="9" ry="6.2" fill="#4A2817"/>
+            <path d="M-8 0 C -3 -3, 3 3, 8 0" stroke="#24120A" stroke-width="1.6" fill="none"/>
+        </g>
+            <g transform="translate(303 92.4) rotate(360) scale(1.05)">
+            <ellipse rx="9" ry="6.2" fill="#4A2817"/>
+            <path d="M-8 0 C -3 -3, 3 3, 8 0" stroke="#24120A" stroke-width="1.6" fill="none"/>
+        </g>
+            <g transform="translate(350.2 83.7) rotate(223) scale(0.89)">
+            <ellipse rx="9" ry="6.2" fill="#4A2817"/>
+            <path d="M-8 0 C -3 -3, 3 3, 8 0" stroke="#24120A" stroke-width="1.6" fill="none"/>
+        </g>
+            <g transform="translate(337 146.7) rotate(47) scale(1.09)">
+            <ellipse rx="9" ry="6.2" fill="#4A2817"/>
+            <path d="M-8 0 C -3 -3, 3 3, 8 0" stroke="#24120A" stroke-width="1.6" fill="none"/>
+        </g>
+            <g transform="translate(370.8 137.1) rotate(208) scale(1.14)">
+            <ellipse rx="9" ry="6.2" fill="#4A2817"/>
+            <path d="M-8 0 C -3 -3, 3 3, 8 0" stroke="#24120A" stroke-width="1.6" fill="none"/>
+        </g>
+            <g transform="translate(385.5 169.2) rotate(269) scale(0.88)">
+            <ellipse rx="9" ry="6.2" fill="#4A2817"/>
+            <path d="M-8 0 C -3 -3, 3 3, 8 0" stroke="#24120A" stroke-width="1.6" fill="none"/>
+        </g>
+            <g transform="translate(336.1 167.2) rotate(20) scale(0.91)">
+            <ellipse rx="9" ry="6.2" fill="#4A2817"/>
+            <path d="M-8 0 C -3 -3, 3 3, 8 0" stroke="#24120A" stroke-width="1.6" fill="none"/>
+        </g>
+            <g transform="translate(356.8 151.8) rotate(27) scale(1.13)">
+            <ellipse rx="9" ry="6.2" fill="#4A2817"/>
+            <path d="M-8 0 C -3 -3, 3 3, 8 0" stroke="#24120A" stroke-width="1.6" fill="none"/>
+        </g>
+    </svg>
+                                    <svg viewBox="0 0 200 200" aria-hidden="true" class="cup-art">
+    <defs>
+        <radialGradient id="chCCb55s" cx="45%" cy="40%" r="65%">
+            <stop offset="0" stop-color="#FFFFFF"/><stop offset=".75" stop-color="#F4EFEA"/><stop offset="1" stop-color="#DCD3CB"/>
+        </radialGradient>
+        <radialGradient id="chCCb55k" cx="50%" cy="50%" r="50%">
+            <stop offset="0" stop-color="#D19A62"/><stop offset=".55" stop-color="#D19A62" stop-opacity=".85"/><stop offset="1" stop-color="#5A2E15"/>
+        </radialGradient>
+    </defs>
+            <circle cx="100" cy="100" r="96" fill="url(#chCCb55s)"/>
+                <circle cx="100" cy="100" r="70" fill="#FCFBF9" stroke="#E6DFD8" stroke-width="1.5"/>
+        <circle cx="100" cy="100" r="58" fill="url(#chCCb55k)"/>
+        <g fill="#F7EBDB">
+                                                <path d="M70 128 C 70 119, 130 119, 130 128" fill="none" stroke="#F7EBDB" stroke-width="5" stroke-linecap="round"/>
+                                    <path d="M73 118 C 73 109, 127 109, 127 118" fill="none" stroke="#F7EBDB" stroke-width="5" stroke-linecap="round"/>
+                                    <path d="M76 108 C 76 99, 124 99, 124 108" fill="none" stroke="#F7EBDB" stroke-width="5" stroke-linecap="round"/>
+                                    <path d="M79 98 C 79 89, 121 89, 121 98" fill="none" stroke="#F7EBDB" stroke-width="5" stroke-linecap="round"/>
+                                    <path d="M82 88 C 82 79, 118 79, 118 88" fill="none" stroke="#F7EBDB" stroke-width="5" stroke-linecap="round"/>
+                                    <path d="M86 78 C 86 69, 114 69, 114 78" fill="none" stroke="#F7EBDB" stroke-width="5" stroke-linecap="round"/>
+                                <ellipse cx="100" cy="64" rx="9" ry="8"/>
+                <path d="M100 58 V 140" stroke="#F7EBDB" stroke-width="2.5"/>
+                    </g>
+    </svg>
+                                <span class="bubble num">Rp22.000</span>
+            </div>
+        </section>
+    
+    
+    <section id="menu">
+        <div class="menu-head">
+            <div><div class="eyebrow">Menu kami</div><h2>Mau minum apa hari ini?</h2></div>
+            <p>Dari kopi susu sampai manual brew single origin, plus camilan hangat dari oven setiap pagi.</p>
+            <a class="btn ghost sm" href="#kontak">Cara pesan <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" class="ico">
+                <path d="M5 12h14M13 6l6 6-6 6"/>
+            </svg>
+</a>
+        </div>
+        <div class="tabs" role="tablist" id="tabs">
+            <button class="tab" role="tab" aria-selected="true" data-c="semua">Semua</button>
+                            <button class="tab" role="tab" aria-selected="false" data-c="kopi">Kopi</button>
+                            <button class="tab" role="tab" aria-selected="false" data-c="manual-brew">Manual Brew</button>
+                            <button class="tab" role="tab" aria-selected="false" data-c="non-kopi">Non-Kopi</button>
+                            <button class="tab" role="tab" aria-selected="false" data-c="camilan">Camilan</button>
+                    </div>
+        <div class="grid" id="grid">
+                            <article class="item " data-cat="kopi">
+                    <div class="thumb" style="background:radial-gradient(120% 90% at 50% 20%, #C9A27A, #5A321A)">
+                        <svg viewBox="0 0 200 200" aria-hidden="true" class="cup-art">
+    <defs>
+        <radialGradient id="cqRHbUJs" cx="45%" cy="40%" r="65%">
+            <stop offset="0" stop-color="#FFFFFF"/><stop offset=".75" stop-color="#F4EFEA"/><stop offset="1" stop-color="#DCD3CB"/>
+        </radialGradient>
+        <radialGradient id="cqRHbUJk" cx="50%" cy="50%" r="50%">
+            <stop offset="0" stop-color="#C9A27A"/><stop offset=".55" stop-color="#C9A27A" stop-opacity=".85"/><stop offset="1" stop-color="#5A321A"/>
+        </radialGradient>
+    </defs>
+            <circle cx="100" cy="100" r="96" fill="url(#cqRHbUJs)"/>
+                <circle cx="100" cy="100" r="70" fill="#FCFBF9" stroke="#E6DFD8" stroke-width="1.5"/>
+        <circle cx="100" cy="100" r="58" fill="url(#cqRHbUJk)"/>
+        <g fill="#F7EBDB">
+                                                <path d="M70 128 C 70 119, 130 119, 130 128" fill="none" stroke="#F7EBDB" stroke-width="5" stroke-linecap="round"/>
+                                    <path d="M73 118 C 73 109, 127 109, 127 118" fill="none" stroke="#F7EBDB" stroke-width="5" stroke-linecap="round"/>
+                                    <path d="M76 108 C 76 99, 124 99, 124 108" fill="none" stroke="#F7EBDB" stroke-width="5" stroke-linecap="round"/>
+                                    <path d="M79 98 C 79 89, 121 89, 121 98" fill="none" stroke="#F7EBDB" stroke-width="5" stroke-linecap="round"/>
+                                    <path d="M82 88 C 82 79, 118 79, 118 88" fill="none" stroke="#F7EBDB" stroke-width="5" stroke-linecap="round"/>
+                                    <path d="M86 78 C 86 69, 114 69, 114 78" fill="none" stroke="#F7EBDB" stroke-width="5" stroke-linecap="round"/>
+                                <ellipse cx="100" cy="64" rx="9" ry="8"/>
+                <path d="M100 58 V 140" stroke="#F7EBDB" stroke-width="2.5"/>
+                    </g>
+    </svg>
+                    </div>
+                                            <span class="tag">Terlaris</span>
+                                        <div class="info">
+                        <div class="eyebrow">Kopi</div>
+                        <h3>Es Kopi Gula Aren</h3>
+                        <p>Espresso, susu segar, gula aren cair dari Banten.</p>
+                        <div class="row">
+                            <span class="price num">Rp22.000</span>
+                                                            <button type="button" class="add add-btn" data-id="1" aria-label="Tambah Es Kopi Gula Aren ke pesanan"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" class="ico">
+                <path d="M12 5v14M5 12h14"/>
+            </svg>
+</button>
+                                                    </div>
+                    </div>
+                </article>
+                            <article class="item " data-cat="kopi">
+                    <div class="thumb" style="background:radial-gradient(120% 90% at 50% 20%, #B88B5E, #2A170C)">
+                        <svg viewBox="0 0 200 200" aria-hidden="true" class="cup-art">
+    <defs>
+        <radialGradient id="ckJfGWVs" cx="45%" cy="40%" r="65%">
+            <stop offset="0" stop-color="#FFFFFF"/><stop offset=".75" stop-color="#F4EFEA"/><stop offset="1" stop-color="#DCD3CB"/>
+        </radialGradient>
+        <radialGradient id="ckJfGWVk" cx="50%" cy="50%" r="50%">
+            <stop offset="0" stop-color="#B88B5E"/><stop offset=".55" stop-color="#B88B5E" stop-opacity=".85"/><stop offset="1" stop-color="#2A170C"/>
+        </radialGradient>
+    </defs>
+            <circle cx="100" cy="100" r="96" fill="url(#ckJfGWVs)"/>
+                <circle cx="100" cy="100" r="70" fill="#FCFBF9" stroke="#E6DFD8" stroke-width="1.5"/>
+        <circle cx="100" cy="100" r="58" fill="url(#ckJfGWVk)"/>
+        <g fill="#F7EBDB">
+                            <ellipse cx="100" cy="72" rx="15" ry="11"/>
+                <path d="M74 96 C 80 80, 120 80, 126 96 C 116 90, 84 90, 74 96 Z"/>
+                <path d="M100 136 C 74 120, 68 104, 80 98 C 90 94, 100 100, 100 106 C 100 100, 110 94, 120 98 C 132 104, 126 120, 100 136 Z"/>
+                <path d="M100 66 V 140" stroke="#F7EBDB" stroke-width="2"/>
+                    </g>
+    </svg>
+                    </div>
+                                        <div class="info">
+                        <div class="eyebrow">Kopi</div>
+                        <h3>Americano</h3>
+                        <p>Double shot arabika Gunung Halu, panas atau dingin.</p>
+                        <div class="row">
+                            <span class="price num">Rp18.000</span>
+                                                            <button type="button" class="add add-btn" data-id="2" aria-label="Tambah Americano ke pesanan"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" class="ico">
+                <path d="M12 5v14M5 12h14"/>
+            </svg>
+</button>
+                                                    </div>
+                    </div>
+                </article>
+                            <article class="item " data-cat="kopi">
+                    <div class="thumb" style="background:radial-gradient(120% 90% at 50% 20%, #D9C2A3, #9C6B43)">
+                        <svg viewBox="0 0 200 200" aria-hidden="true" class="cup-art">
+    <defs>
+        <radialGradient id="cJ1gKK4s" cx="45%" cy="40%" r="65%">
+            <stop offset="0" stop-color="#FFFFFF"/><stop offset=".75" stop-color="#F4EFEA"/><stop offset="1" stop-color="#DCD3CB"/>
+        </radialGradient>
+        <radialGradient id="cJ1gKK4k" cx="50%" cy="50%" r="50%">
+            <stop offset="0" stop-color="#D9C2A3"/><stop offset=".55" stop-color="#D9C2A3" stop-opacity=".85"/><stop offset="1" stop-color="#9C6B43"/>
+        </radialGradient>
+    </defs>
+            <circle cx="100" cy="100" r="96" fill="url(#cJ1gKK4s)"/>
+                <circle cx="100" cy="100" r="70" fill="#FCFBF9" stroke="#E6DFD8" stroke-width="1.5"/>
+        <circle cx="100" cy="100" r="58" fill="url(#cJ1gKK4k)"/>
+        <g fill="#F7EBDB">
+                            <path d="M100 132 C 66 108, 60 84, 76 72 C 88 63, 100 72, 100 82 C 100 72, 112 63, 124 72 C 140 84, 134 108, 100 132 Z" opacity=".95"/>
+                    </g>
+    </svg>
+                    </div>
+                                        <div class="info">
+                        <div class="eyebrow">Kopi</div>
+                        <h3>Kafe Latte</h3>
+                        <p>Espresso lembut dengan susu dan lapisan foam tipis.</p>
+                        <div class="row">
+                            <span class="price num">Rp24.000</span>
+                                                            <button type="button" class="add add-btn" data-id="3" aria-label="Tambah Kafe Latte ke pesanan"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" class="ico">
+                <path d="M12 5v14M5 12h14"/>
+            </svg>
+</button>
+                                                    </div>
+                    </div>
+                </article>
+                            <article class="item " data-cat="manual-brew">
+                    <div class="thumb" style="background:radial-gradient(120% 90% at 50% 20%, #9DB7A2, #5E3418)">
+                        <svg viewBox="0 0 200 200" aria-hidden="true" class="cup-art">
+    <defs>
+        <radialGradient id="cJWmDFSs" cx="45%" cy="40%" r="65%">
+            <stop offset="0" stop-color="#FFFFFF"/><stop offset=".75" stop-color="#F4EFEA"/><stop offset="1" stop-color="#DCD3CB"/>
+        </radialGradient>
+        <radialGradient id="cJWmDFSk" cx="50%" cy="50%" r="50%">
+            <stop offset="0" stop-color="#9DB7A2"/><stop offset=".55" stop-color="#9DB7A2" stop-opacity=".85"/><stop offset="1" stop-color="#5E3418"/>
+        </radialGradient>
+    </defs>
+            <circle cx="100" cy="100" r="96" fill="url(#cJWmDFSs)"/>
+                <circle cx="100" cy="100" r="70" fill="#FCFBF9" stroke="#E6DFD8" stroke-width="1.5"/>
+        <circle cx="100" cy="100" r="58" fill="url(#cJWmDFSk)"/>
+        <g fill="#F7EBDB">
+                                                <path d="M70 128 C 70 119, 130 119, 130 128" fill="none" stroke="#F7EBDB" stroke-width="5" stroke-linecap="round"/>
+                                    <path d="M73 118 C 73 109, 127 109, 127 118" fill="none" stroke="#F7EBDB" stroke-width="5" stroke-linecap="round"/>
+                                    <path d="M76 108 C 76 99, 124 99, 124 108" fill="none" stroke="#F7EBDB" stroke-width="5" stroke-linecap="round"/>
+                                    <path d="M79 98 C 79 89, 121 89, 121 98" fill="none" stroke="#F7EBDB" stroke-width="5" stroke-linecap="round"/>
+                                    <path d="M82 88 C 82 79, 118 79, 118 88" fill="none" stroke="#F7EBDB" stroke-width="5" stroke-linecap="round"/>
+                                    <path d="M86 78 C 86 69, 114 69, 114 78" fill="none" stroke="#F7EBDB" stroke-width="5" stroke-linecap="round"/>
+                                <ellipse cx="100" cy="64" rx="9" ry="8"/>
+                <path d="M100 58 V 140" stroke="#F7EBDB" stroke-width="2.5"/>
+                    </g>
+    </svg>
+                    </div>
+                                            <span class="tag">Single origin</span>
+                                        <div class="info">
+                        <div class="eyebrow">Manual Brew</div>
+                        <h3>V60 Kerinci</h3>
+                        <p>Fruity, aroma jeruk. Seduh 1:15, 3 menit.</p>
+                        <div class="row">
+                            <span class="price num">Rp28.000</span>
+                                                            <button type="button" class="add add-btn" data-id="4" aria-label="Tambah V60 Kerinci ke pesanan"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" class="ico">
+                <path d="M12 5v14M5 12h14"/>
+            </svg>
+</button>
+                                                    </div>
+                    </div>
+                </article>
+                            <article class="item " data-cat="manual-brew">
+                    <div class="thumb" style="background:radial-gradient(120% 90% at 50% 20%, #A9C4CF, #6A3B1D)">
+                        <svg viewBox="0 0 200 200" aria-hidden="true" class="cup-art">
+    <defs>
+        <radialGradient id="cw3DXiss" cx="45%" cy="40%" r="65%">
+            <stop offset="0" stop-color="#FFFFFF"/><stop offset=".75" stop-color="#F4EFEA"/><stop offset="1" stop-color="#DCD3CB"/>
+        </radialGradient>
+        <radialGradient id="cw3DXisk" cx="50%" cy="50%" r="50%">
+            <stop offset="0" stop-color="#A9C4CF"/><stop offset=".55" stop-color="#A9C4CF" stop-opacity=".85"/><stop offset="1" stop-color="#6A3B1D"/>
+        </radialGradient>
+    </defs>
+            <circle cx="100" cy="100" r="96" fill="url(#cw3DXiss)"/>
+                <circle cx="100" cy="100" r="70" fill="#FCFBF9" stroke="#E6DFD8" stroke-width="1.5"/>
+        <circle cx="100" cy="100" r="58" fill="url(#cw3DXisk)"/>
+        <g fill="#F7EBDB">
+                            <ellipse cx="100" cy="72" rx="15" ry="11"/>
+                <path d="M74 96 C 80 80, 120 80, 126 96 C 116 90, 84 90, 74 96 Z"/>
+                <path d="M100 136 C 74 120, 68 104, 80 98 C 90 94, 100 100, 100 106 C 100 100, 110 94, 120 98 C 132 104, 126 120, 100 136 Z"/>
+                <path d="M100 66 V 140" stroke="#F7EBDB" stroke-width="2"/>
+                    </g>
+    </svg>
+                    </div>
+                                        <div class="info">
+                        <div class="eyebrow">Manual Brew</div>
+                        <h3>Japanese Iced</h3>
+                        <p>V60 diseduh langsung ke atas es, segar dan ringan.</p>
+                        <div class="row">
+                            <span class="price num">Rp28.000</span>
+                                                            <button type="button" class="add add-btn" data-id="5" aria-label="Tambah Japanese Iced ke pesanan"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" class="ico">
+                <path d="M12 5v14M5 12h14"/>
+            </svg>
+</button>
+                                                    </div>
+                    </div>
+                </article>
+                            <article class="item " data-cat="non-kopi">
+                    <div class="thumb" style="background:radial-gradient(120% 90% at 50% 20%, #C7D9B0, #6E9450)">
+                        <svg viewBox="0 0 200 200" aria-hidden="true" class="cup-art">
+    <defs>
+        <radialGradient id="cPTUz2Ls" cx="45%" cy="40%" r="65%">
+            <stop offset="0" stop-color="#FFFFFF"/><stop offset=".75" stop-color="#F4EFEA"/><stop offset="1" stop-color="#DCD3CB"/>
+        </radialGradient>
+        <radialGradient id="cPTUz2Lk" cx="50%" cy="50%" r="50%">
+            <stop offset="0" stop-color="#C7D9B0"/><stop offset=".55" stop-color="#C7D9B0" stop-opacity=".85"/><stop offset="1" stop-color="#6E9450"/>
+        </radialGradient>
+    </defs>
+            <circle cx="100" cy="100" r="96" fill="url(#cPTUz2Ls)"/>
+                <circle cx="100" cy="100" r="70" fill="#FCFBF9" stroke="#E6DFD8" stroke-width="1.5"/>
+        <circle cx="100" cy="100" r="58" fill="url(#cPTUz2Lk)"/>
+        <g fill="#F7EBDB">
+                            <path d="M100 132 C 66 108, 60 84, 76 72 C 88 63, 100 72, 100 82 C 100 72, 112 63, 124 72 C 140 84, 134 108, 100 132 Z" opacity=".95"/>
+                    </g>
+    </svg>
+                    </div>
+                                        <div class="info">
+                        <div class="eyebrow">Non-Kopi</div>
+                        <h3>Matcha Latte</h3>
+                        <p>Matcha Uji dikocok manual dengan susu segar.</p>
+                        <div class="row">
+                            <span class="price num">Rp26.000</span>
+                                                            <button type="button" class="add add-btn" data-id="6" aria-label="Tambah Matcha Latte ke pesanan"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" class="ico">
+                <path d="M12 5v14M5 12h14"/>
+            </svg>
+</button>
+                                                    </div>
+                    </div>
+                </article>
+                            <article class="item " data-cat="non-kopi">
+                    <div class="thumb" style="background:radial-gradient(120% 90% at 50% 20%, #D4B49A, #4A2715)">
+                        <svg viewBox="0 0 200 200" aria-hidden="true" class="cup-art">
+    <defs>
+        <radialGradient id="cHMDySIs" cx="45%" cy="40%" r="65%">
+            <stop offset="0" stop-color="#FFFFFF"/><stop offset=".75" stop-color="#F4EFEA"/><stop offset="1" stop-color="#DCD3CB"/>
+        </radialGradient>
+        <radialGradient id="cHMDySIk" cx="50%" cy="50%" r="50%">
+            <stop offset="0" stop-color="#D4B49A"/><stop offset=".55" stop-color="#D4B49A" stop-opacity=".85"/><stop offset="1" stop-color="#4A2715"/>
+        </radialGradient>
+    </defs>
+            <circle cx="100" cy="100" r="96" fill="url(#cHMDySIs)"/>
+                <circle cx="100" cy="100" r="70" fill="#FCFBF9" stroke="#E6DFD8" stroke-width="1.5"/>
+        <circle cx="100" cy="100" r="58" fill="url(#cHMDySIk)"/>
+        <g fill="#F7EBDB">
+                                                <path d="M70 128 C 70 119, 130 119, 130 128" fill="none" stroke="#F7EBDB" stroke-width="5" stroke-linecap="round"/>
+                                    <path d="M73 118 C 73 109, 127 109, 127 118" fill="none" stroke="#F7EBDB" stroke-width="5" stroke-linecap="round"/>
+                                    <path d="M76 108 C 76 99, 124 99, 124 108" fill="none" stroke="#F7EBDB" stroke-width="5" stroke-linecap="round"/>
+                                    <path d="M79 98 C 79 89, 121 89, 121 98" fill="none" stroke="#F7EBDB" stroke-width="5" stroke-linecap="round"/>
+                                    <path d="M82 88 C 82 79, 118 79, 118 88" fill="none" stroke="#F7EBDB" stroke-width="5" stroke-linecap="round"/>
+                                    <path d="M86 78 C 86 69, 114 69, 114 78" fill="none" stroke="#F7EBDB" stroke-width="5" stroke-linecap="round"/>
+                                <ellipse cx="100" cy="64" rx="9" ry="8"/>
+                <path d="M100 58 V 140" stroke="#F7EBDB" stroke-width="2.5"/>
+                    </g>
+    </svg>
+                    </div>
+                                        <div class="info">
+                        <div class="eyebrow">Non-Kopi</div>
+                        <h3>Cokelat Bari</h3>
+                        <p>Cokelat hitam 70% dari Jembrana, Bali.</p>
+                        <div class="row">
+                            <span class="price num">Rp23.000</span>
+                                                            <button type="button" class="add add-btn" data-id="7" aria-label="Tambah Cokelat Bari ke pesanan"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" class="ico">
+                <path d="M12 5v14M5 12h14"/>
+            </svg>
+</button>
+                                                    </div>
+                    </div>
+                </article>
+                            <article class="item " data-cat="non-kopi">
+                    <div class="thumb" style="background:radial-gradient(120% 90% at 50% 20%, #E6CF91, #B4802A)">
+                        <svg viewBox="0 0 200 200" aria-hidden="true" class="cup-art">
+    <defs>
+        <radialGradient id="c86m5Qxs" cx="45%" cy="40%" r="65%">
+            <stop offset="0" stop-color="#FFFFFF"/><stop offset=".75" stop-color="#F4EFEA"/><stop offset="1" stop-color="#DCD3CB"/>
+        </radialGradient>
+        <radialGradient id="c86m5Qxk" cx="50%" cy="50%" r="50%">
+            <stop offset="0" stop-color="#E6CF91"/><stop offset=".55" stop-color="#E6CF91" stop-opacity=".85"/><stop offset="1" stop-color="#B4802A"/>
+        </radialGradient>
+    </defs>
+            <circle cx="100" cy="100" r="96" fill="url(#c86m5Qxs)"/>
+                <circle cx="100" cy="100" r="70" fill="#FCFBF9" stroke="#E6DFD8" stroke-width="1.5"/>
+        <circle cx="100" cy="100" r="58" fill="url(#c86m5Qxk)"/>
+        <g fill="#F7EBDB">
+                            <ellipse cx="100" cy="72" rx="15" ry="11"/>
+                <path d="M74 96 C 80 80, 120 80, 126 96 C 116 90, 84 90, 74 96 Z"/>
+                <path d="M100 136 C 74 120, 68 104, 80 98 C 90 94, 100 100, 100 106 C 100 100, 110 94, 120 98 C 132 104, 126 120, 100 136 Z"/>
+                <path d="M100 66 V 140" stroke="#F7EBDB" stroke-width="2"/>
+                    </g>
+    </svg>
+                    </div>
+                                        <div class="info">
+                        <div class="eyebrow">Non-Kopi</div>
+                        <h3>Teh Serai Madu</h3>
+                        <p>Teh hitam, serai segar, dan madu hutan.</p>
+                        <div class="row">
+                            <span class="price num">Rp18.000</span>
+                                                            <button type="button" class="add add-btn" data-id="8" aria-label="Tambah Teh Serai Madu ke pesanan"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" class="ico">
+                <path d="M12 5v14M5 12h14"/>
+            </svg>
+</button>
+                                                    </div>
+                    </div>
+                </article>
+                            <article class="item " data-cat="camilan">
+                    <div class="thumb" style="background:radial-gradient(120% 90% at 50% 20%, #EBD5A8, #C48A3C)">
+                        <svg viewBox="0 0 200 200" aria-hidden="true" class="cup-art">
+    <defs>
+        <radialGradient id="cbPrAA1s" cx="45%" cy="40%" r="65%">
+            <stop offset="0" stop-color="#FFFFFF"/><stop offset=".75" stop-color="#F4EFEA"/><stop offset="1" stop-color="#DCD3CB"/>
+        </radialGradient>
+        <radialGradient id="cbPrAA1k" cx="50%" cy="50%" r="50%">
+            <stop offset="0" stop-color="#EBD5A8"/><stop offset=".55" stop-color="#EBD5A8" stop-opacity=".85"/><stop offset="1" stop-color="#C48A3C"/>
+        </radialGradient>
+    </defs>
+            <circle cx="100" cy="100" r="96" fill="url(#cbPrAA1s)"/>
+        <circle cx="100" cy="100" r="74" fill="none" stroke="#E6DED6" stroke-width="2"/>
+        <g transform="rotate(-18 100 100)">
+            <path d="M48 112 C 52 70, 148 70, 152 112 C 140 98, 128 96, 118 104 C 110 94, 90 94, 82 104 C 72 96, 60 98, 48 112 Z" fill="#EBD5A8"/>
+            <path d="M58 110 C 66 82, 134 82, 142 110" fill="none" stroke="#C48A3C" stroke-width="5" stroke-linecap="round" opacity=".55"/>
+            <path d="M82 104 C 86 88, 114 88, 118 104" fill="none" stroke="#C48A3C" stroke-width="4" stroke-linecap="round" opacity=".45"/>
+        </g>
+    </svg>
+                    </div>
+                                        <div class="info">
+                        <div class="eyebrow">Camilan</div>
+                        <h3>Croissant Mentega</h3>
+                        <p>Dipanggang tiap pagi, renyah di luar.</p>
+                        <div class="row">
+                            <span class="price num">Rp20.000</span>
+                                                            <button type="button" class="add add-btn" data-id="9" aria-label="Tambah Croissant Mentega ke pesanan"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" class="ico">
+                <path d="M12 5v14M5 12h14"/>
+            </svg>
+</button>
+                                                    </div>
+                    </div>
+                </article>
+                            <article class="item " data-cat="camilan">
+                    <div class="thumb" style="background:radial-gradient(120% 90% at 50% 20%, #F0DDA0, #D49B3A)">
+                        <svg viewBox="0 0 200 200" aria-hidden="true" class="cup-art">
+    <defs>
+        <radialGradient id="cwQinZRs" cx="45%" cy="40%" r="65%">
+            <stop offset="0" stop-color="#FFFFFF"/><stop offset=".75" stop-color="#F4EFEA"/><stop offset="1" stop-color="#DCD3CB"/>
+        </radialGradient>
+        <radialGradient id="cwQinZRk" cx="50%" cy="50%" r="50%">
+            <stop offset="0" stop-color="#F0DDA0"/><stop offset=".55" stop-color="#F0DDA0" stop-opacity=".85"/><stop offset="1" stop-color="#D49B3A"/>
+        </radialGradient>
+    </defs>
+            <circle cx="100" cy="100" r="96" fill="url(#cwQinZRs)"/>
+        <circle cx="100" cy="100" r="74" fill="none" stroke="#E6DED6" stroke-width="2"/>
+        <g transform="rotate(-18 100 100)">
+            <path d="M48 112 C 52 70, 148 70, 152 112 C 140 98, 128 96, 118 104 C 110 94, 90 94, 82 104 C 72 96, 60 98, 48 112 Z" fill="#F0DDA0"/>
+            <path d="M58 110 C 66 82, 134 82, 142 110" fill="none" stroke="#D49B3A" stroke-width="5" stroke-linecap="round" opacity=".55"/>
+            <path d="M82 104 C 86 88, 114 88, 118 104" fill="none" stroke="#D49B3A" stroke-width="4" stroke-linecap="round" opacity=".45"/>
+        </g>
+    </svg>
+                    </div>
+                                            <span class="tag">Favorit</span>
+                                        <div class="info">
+                        <div class="eyebrow">Camilan</div>
+                        <h3>Pisang Goreng Keju</h3>
+                        <p>Pisang kepok, keju parut, susu kental manis.</p>
+                        <div class="row">
+                            <span class="price num">Rp17.000</span>
+                                                            <button type="button" class="add add-btn" data-id="10" aria-label="Tambah Pisang Goreng Keju ke pesanan"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" class="ico">
+                <path d="M12 5v14M5 12h14"/>
+            </svg>
+</button>
+                                                    </div>
+                    </div>
+                </article>
+                    </div>
+    </section>
+
+    
+    <section class="perks" aria-label="Kenapa Bari Coffee">
+        <div><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" class="ico">
+                <path d="M5 19c0-8 5-14 15-14 0 10-6 15-14 15"/><path d="M5 19l7-7"/>
+            </svg>
+<p><strong>Langsung dari petani</strong><span>Tiga kebun kopi lokal</span></p></div>
+        <div><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" class="ico">
+                <path d="M12 3c1 4 6 5.5 6 11a6 6 0 0 1-12 0c0-3 2-4.5 2-7 2 1 3 2.5 3 4 1-2 1-5 1-8Z"/>
+            </svg>
+<p><strong>Sangrai sendiri</strong><span>Segar setiap Senin</span></p></div>
+        <div><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" class="ico">
+                <path d="M2.5 9a14 14 0 0 1 19 0M5.5 12.5a9.5 9.5 0 0 1 13 0M8.5 16a5 5 0 0 1 7 0"/><circle cx="12" cy="19" r=".8" fill="currentColor"/>
+            </svg>
+<p><strong>Wi-Fi & colokan</strong><span>Di setiap meja</span></p></div>
+        <div><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" class="ico">
+                <path d="M4 18.5V6a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v9a2 2 0 0 1-2 2H8l-4 3.5Z"/><path d="M8 9h8M8 12.5h5"/>
+            </svg>
+<p><strong>Pesan via WhatsApp</strong><span>Tinggal ambil di kedai</span></p></div>
+    </section>
+
+    
+    <section class="about" id="tentang">
+        <div class="story">
+            <div class="eyebrow">Tentang kami</div>
+            <h2>Kedai kecil di bawah pohon ketapang.</h2>
+            <p>Bari Coffee berawal dari gerobak di depan kampus. Sekarang kami punya 24 kursi, satu mesin roasting kecil, dan pemasok tetap dari tiga kebun kopi petani lokal.</p>
+            <p>Semua biji kami beli langsung dari petani, jadi harga di cangkirmu ikut menghidupi kebunnya.</p>
+            <svg viewBox="0 0 200 200" aria-hidden="true" class="cup-art">
+    <defs>
+        <radialGradient id="cM7tguBs" cx="45%" cy="40%" r="65%">
+            <stop offset="0" stop-color="#FFFFFF"/><stop offset=".75" stop-color="#F4EFEA"/><stop offset="1" stop-color="#DCD3CB"/>
+        </radialGradient>
+        <radialGradient id="cM7tguBk" cx="50%" cy="50%" r="50%">
+            <stop offset="0" stop-color="#D6A26E"/><stop offset=".55" stop-color="#D6A26E" stop-opacity=".85"/><stop offset="1" stop-color="#6B3E22"/>
+        </radialGradient>
+    </defs>
+            <circle cx="100" cy="100" r="96" fill="url(#cM7tguBs)"/>
+                <circle cx="100" cy="100" r="70" fill="#FCFBF9" stroke="#E6DFD8" stroke-width="1.5"/>
+        <circle cx="100" cy="100" r="58" fill="url(#cM7tguBk)"/>
+        <g fill="#F7EBDB">
+                            <ellipse cx="100" cy="72" rx="15" ry="11"/>
+                <path d="M74 96 C 80 80, 120 80, 126 96 C 116 90, 84 90, 74 96 Z"/>
+                <path d="M100 136 C 74 120, 68 104, 80 98 C 90 94, 100 100, 100 106 C 100 100, 110 94, 120 98 C 132 104, 126 120, 100 136 Z"/>
+                <path d="M100 66 V 140" stroke="#F7EBDB" stroke-width="2"/>
+                    </g>
+    </svg>
+        </div>
+        <div class="visit" id="lokasi">
+            <div class="eyebrow">Lokasi & jam buka</div>
+            <h2>Mampir ke kedai</h2>
+            <p class="addr"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" class="ico">
+                <path d="M12 21s-6.5-5.5-6.5-11a6.5 6.5 0 0 1 13 0c0 5.5-6.5 11-6.5 11Z"/><circle cx="12" cy="10" r="2.3"/>
+            </svg>
+ Jl. Pajajaran No. 12, Bogor</p>
+            <div class="hours">
+                <div><span>Senin – Jumat</span><span class="num">08.00 – 22.00</span></div>
+                <div><span>Sabtu</span><span class="num">09.00 – 23.00</span></div>
+                <div><span>Minggu</span><span class="num">09.00 – 21.00</span></div>
+            </div>
+        </div>
+    </section>
+
+    
+    <section class="cta-block" id="kontak">
+        <div class="cta-row">
+            <div><div class="eyebrow">Pesan dulu, ambil nanti</div><h2>Mau kopinya siap saat kamu datang?</h2></div>
+            <button type="button" class="btn primary" id="ctaOrder">Buat pesanan</button>
+        </div>
+        <p>Pilih menu, tekan tombol tambah, lalu isi nama dan jam ambil di keranjang. Pesananmu tersimpan dan WhatsApp terbuka dengan detail pesanan beserta nomor order. Tinggal kirim, lalu ambil di kedai.</p>
+    </section>
+
+    <footer>
+        <div>
+            <a class="logo" href=".">
+    <span class="logo-name">Bari Coffee <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" class="ico logo-ico">
+                <path d="M4 9h12v4a5 5 0 0 1-5 5H9a5 5 0 0 1-5-5V9Z"/><path d="M16 10h1.5a2.5 2.5 0 0 1 0 5H16"/><path d="M3 21h15"/><path d="M8 3c-.8 1 .8 2 0 3M12 3c-.8 1 .8 2 0 3"/>
+            </svg>
+</span>
+    <span class="logo-tag">Diseduh pelan, sejak 2021.</span></a>
+            <svg viewBox="0 0 400 400" aria-hidden="true" class="beans">
+            <g transform="translate(241.9 202.9) rotate(168) scale(0.83)">
+            <ellipse rx="9" ry="6.2" fill="#4A2817"/>
+            <path d="M-8 0 C -3 -3, 3 3, 8 0" stroke="#24120A" stroke-width="1.6" fill="none"/>
+        </g>
+            <g transform="translate(252.4 216.9) rotate(232) scale(1.09)">
+            <ellipse rx="9" ry="6.2" fill="#4A2817"/>
+            <path d="M-8 0 C -3 -3, 3 3, 8 0" stroke="#24120A" stroke-width="1.6" fill="none"/>
+        </g>
+            <g transform="translate(242.7 219.7) rotate(22) scale(1.07)">
+            <ellipse rx="9" ry="6.2" fill="#4A2817"/>
+            <path d="M-8 0 C -3 -3, 3 3, 8 0" stroke="#24120A" stroke-width="1.6" fill="none"/>
+        </g>
+            <g transform="translate(259.4 250.5) rotate(292) scale(0.93)">
+            <ellipse rx="9" ry="6.2" fill="#4A2817"/>
+            <path d="M-8 0 C -3 -3, 3 3, 8 0" stroke="#24120A" stroke-width="1.6" fill="none"/>
+        </g>
+            <g transform="translate(236.1 270.3) rotate(62) scale(0.88)">
+            <ellipse rx="9" ry="6.2" fill="#4A2817"/>
+            <path d="M-8 0 C -3 -3, 3 3, 8 0" stroke="#24120A" stroke-width="1.6" fill="none"/>
+        </g>
+            <g transform="translate(216.6 251.4) rotate(16) scale(0.9)">
+            <ellipse rx="9" ry="6.2" fill="#4A2817"/>
+            <path d="M-8 0 C -3 -3, 3 3, 8 0" stroke="#24120A" stroke-width="1.6" fill="none"/>
+        </g>
+            <g transform="translate(199.3 281) rotate(58) scale(1.1)">
+            <ellipse rx="9" ry="6.2" fill="#4A2817"/>
+            <path d="M-8 0 C -3 -3, 3 3, 8 0" stroke="#24120A" stroke-width="1.6" fill="none"/>
+        </g>
+            <g transform="translate(199.2 272) rotate(310) scale(0.99)">
+            <ellipse rx="9" ry="6.2" fill="#4A2817"/>
+            <path d="M-8 0 C -3 -3, 3 3, 8 0" stroke="#24120A" stroke-width="1.6" fill="none"/>
+        </g>
+            <g transform="translate(169.9 293.3) rotate(260) scale(0.94)">
+            <ellipse rx="9" ry="6.2" fill="#4A2817"/>
+            <path d="M-8 0 C -3 -3, 3 3, 8 0" stroke="#24120A" stroke-width="1.6" fill="none"/>
+        </g>
+            <g transform="translate(113.7 310.2) rotate(271) scale(0.89)">
+            <ellipse rx="9" ry="6.2" fill="#4A2817"/>
+            <path d="M-8 0 C -3 -3, 3 3, 8 0" stroke="#24120A" stroke-width="1.6" fill="none"/>
+        </g>
+            <g transform="translate(170.6 227.1) rotate(146) scale(1.07)">
+            <ellipse rx="9" ry="6.2" fill="#4A2817"/>
+            <path d="M-8 0 C -3 -3, 3 3, 8 0" stroke="#24120A" stroke-width="1.6" fill="none"/>
+        </g>
+            <g transform="translate(117.4 230.4) rotate(296) scale(1.15)">
+            <ellipse rx="9" ry="6.2" fill="#4A2817"/>
+            <path d="M-8 0 C -3 -3, 3 3, 8 0" stroke="#24120A" stroke-width="1.6" fill="none"/>
+        </g>
+            <g transform="translate(83.7 220.2) rotate(214) scale(0.84)">
+            <ellipse rx="9" ry="6.2" fill="#4A2817"/>
+            <path d="M-8 0 C -3 -3, 3 3, 8 0" stroke="#24120A" stroke-width="1.6" fill="none"/>
+        </g>
+            <g transform="translate(106.2 194.4) rotate(129) scale(0.93)">
+            <ellipse rx="9" ry="6.2" fill="#4A2817"/>
+            <path d="M-8 0 C -3 -3, 3 3, 8 0" stroke="#24120A" stroke-width="1.6" fill="none"/>
+        </g>
+            <g transform="translate(148.1 189.4) rotate(60) scale(1.12)">
+            <ellipse rx="9" ry="6.2" fill="#4A2817"/>
+            <path d="M-8 0 C -3 -3, 3 3, 8 0" stroke="#24120A" stroke-width="1.6" fill="none"/>
+        </g>
+            <g transform="translate(112.9 141.3) rotate(202) scale(1.04)">
+            <ellipse rx="9" ry="6.2" fill="#4A2817"/>
+            <path d="M-8 0 C -3 -3, 3 3, 8 0" stroke="#24120A" stroke-width="1.6" fill="none"/>
+        </g>
+            <g transform="translate(136.2 156.8) rotate(88) scale(0.88)">
+            <ellipse rx="9" ry="6.2" fill="#4A2817"/>
+            <path d="M-8 0 C -3 -3, 3 3, 8 0" stroke="#24120A" stroke-width="1.6" fill="none"/>
+        </g>
+            <g transform="translate(126.7 84.2) rotate(64) scale(1)">
+            <ellipse rx="9" ry="6.2" fill="#4A2817"/>
+            <path d="M-8 0 C -3 -3, 3 3, 8 0" stroke="#24120A" stroke-width="1.6" fill="none"/>
+        </g>
+            <g transform="translate(183.7 149.6) rotate(294) scale(1.06)">
+            <ellipse rx="9" ry="6.2" fill="#4A2817"/>
+            <path d="M-8 0 C -3 -3, 3 3, 8 0" stroke="#24120A" stroke-width="1.6" fill="none"/>
+        </g>
+            <g transform="translate(182.4 128.1) rotate(42) scale(0.85)">
+            <ellipse rx="9" ry="6.2" fill="#4A2817"/>
+            <path d="M-8 0 C -3 -3, 3 3, 8 0" stroke="#24120A" stroke-width="1.6" fill="none"/>
+        </g>
+            <g transform="translate(236.6 62.8) rotate(121) scale(1.15)">
+            <ellipse rx="9" ry="6.2" fill="#4A2817"/>
+            <path d="M-8 0 C -3 -3, 3 3, 8 0" stroke="#24120A" stroke-width="1.6" fill="none"/>
+        </g>
+            <g transform="translate(262.5 98.7) rotate(39) scale(0.91)">
+            <ellipse rx="9" ry="6.2" fill="#4A2817"/>
+            <path d="M-8 0 C -3 -3, 3 3, 8 0" stroke="#24120A" stroke-width="1.6" fill="none"/>
+        </g>
+            <g transform="translate(260.1 138.5) rotate(78) scale(0.84)">
+            <ellipse rx="9" ry="6.2" fill="#4A2817"/>
+            <path d="M-8 0 C -3 -3, 3 3, 8 0" stroke="#24120A" stroke-width="1.6" fill="none"/>
+        </g>
+            <g transform="translate(270.1 140.4) rotate(37) scale(0.87)">
+            <ellipse rx="9" ry="6.2" fill="#4A2817"/>
+            <path d="M-8 0 C -3 -3, 3 3, 8 0" stroke="#24120A" stroke-width="1.6" fill="none"/>
+        </g>
+            <g transform="translate(272.8 156.1) rotate(67) scale(0.81)">
+            <ellipse rx="9" ry="6.2" fill="#4A2817"/>
+            <path d="M-8 0 C -3 -3, 3 3, 8 0" stroke="#24120A" stroke-width="1.6" fill="none"/>
+        </g>
+            <g transform="translate(244.7 194.5) rotate(146) scale(1.05)">
+            <ellipse rx="9" ry="6.2" fill="#4A2817"/>
+            <path d="M-8 0 C -3 -3, 3 3, 8 0" stroke="#24120A" stroke-width="1.6" fill="none"/>
+        </g>
+    </svg>
+        </div>
+        <div>
+            <h4>Menu</h4>
+            <ul>
+                <li><a href=".#menu">Semua menu</a></li>
+                <li><a href=".#andalan">Racikan andalan</a></li>
+                <li><a href=".#kontak">Pesan untuk diambil</a></li>
+            </ul>
+        </div>
+        <div>
+            <h4>Bari Coffee</h4>
+            <ul>
+                <li><a href=".#tentang">Tentang kami</a></li>
+                <li><a href=".#lokasi">Jam buka</a></li>
+                <li><a href="https://wa.me/6281234567890" target="_blank" rel="noopener">WhatsApp</a></li>
+            </ul>
+        </div>
+        <div>
+            <h4>Alamat</h4>
+            <ul>
+                <li>Jl. Pajajaran No. 12</li>
+                <li>Bogor, Jawa Barat</li>
+                <li class="num">0812-3456-7890</li>
+            </ul>
+        </div>
+        <div class="copy">
+            <span>© 2026 Bari Coffee · Proyek Digital Kreatif (data contoh)</span>
+                            <span>Versi demo · <a href="https://github.com/baricomp4ny/bari-coffee" target="_blank" rel="noopener">Lihat kode di GitHub ↗</a></span>
+                    </div>
+    </footer>
+</div>
+
+    <div class="scrim" id="scrim" hidden></div>
+    <aside class="tray" id="tray" aria-label="Pesanan kamu" aria-hidden="true">
+        <div class="tray-head"><h3>Pesanan kamu</h3><button class="x" id="closeCart" aria-label="Tutup">✕</button></div>
+                
+        <form id="orderForm" style="display:contents">
+                                <div class="lines" id="lines"></div>
+            <div id="cartInputs"></div>
+            <label class="field" for="nama">Nama pemesan
+                <input id="nama" name="nama" value="" placeholder="mis. Rani" autocomplete="name" maxlength="60" required>
+            </label>
+            <label class="field" for="ambil">Diambil jam
+                <select id="ambil" name="ambil">
+                                            <option >Secepatnya</option>
+                                            <option >15 menit lagi</option>
+                                            <option >30 menit lagi</option>
+                                            <option >1 jam lagi</option>
+                                    </select>
+            </label>
+            <div class="total"><span>Total</span><span class="num" id="total">Rp0</span></div>
+            <button type="submit" class="btn primary wa" id="wa" disabled>Kirim pesanan via WhatsApp</button>
+                            <p class="note">Versi demo: WhatsApp terbuka dengan pesan otomatis (pesanan tidak disimpan). Nomor kedai: 0812-3456-7890 (contoh).</p>
+                    </form>
+    </aside>
+<script src="./js/bari.js?v=1792387796"></script>
+<script>
+const MENU = {"1":{"name":"Es Kopi Gula Aren","price":22000},"2":{"name":"Americano","price":18000},"3":{"name":"Kafe Latte","price":24000},"4":{"name":"V60 Kerinci","price":28000},"5":{"name":"Japanese Iced","price":28000},"6":{"name":"Matcha Latte","price":26000},"7":{"name":"Cokelat Bari","price":23000},"8":{"name":"Teh Serai Madu","price":18000},"9":{"name":"Croissant Mentega","price":20000},"10":{"name":"Pisang Goreng Keju","price":17000}};
+const CART_KEY = "bari-cart";
+const rp = n => "Rp" + n.toLocaleString("id-ID");
+const $ = id => document.getElementById(id);
+const esc = s => String(s).replace(/[&<>"']/g, c => ({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c]));
+
+let cart = {};
+try { cart = JSON.parse(localStorage.getItem(CART_KEY) || "{}") || {}; } catch (e) { cart = {}; }
+// buang item yang sudah tidak ada atau sedang habis
+for (const k of Object.keys(cart)) { if (!MENU[k] || !(cart[k] > 0)) delete cart[k]; }
+
+function save(){ try { localStorage.setItem(CART_KEY, JSON.stringify(cart)); } catch (e) {} }
+
+function renderButtons(){
+  document.querySelectorAll(".add-btn[data-id]").forEach(b => {
+    const q = cart[b.dataset.id] || 0;
+    if (b.dataset.open) return; // tombol "Pesan sekarang" tidak menampilkan jumlah
+    b.classList.toggle("on", q > 0);
+    b.dataset.qty = q ? q : "";
+  });
+}
+function renderCart(){
+  const ids = Object.keys(cart);
+  const count = ids.reduce((s,k)=>s+cart[k],0);
+  const total = ids.reduce((s,k)=>s+cart[k]*MENU[k].price,0);
+  $("count").textContent = count;
+  $("total").textContent = rp(total);
+  $("lines").innerHTML = ids.length ? ids.map(k=>{const m=MENU[k];return `
+    <div class="line${k === lastAdded ? " added" : ""}"><strong>${esc(m.name)}</strong><span class="num">${rp(m.price*cart[k])}</span>
+    <small>${rp(m.price)} / item</small>
+    <div class="qty"><button type="button" data-dec="${k}" aria-label="Kurangi">−</button><span class="num">${cart[k]}</span><button type="button" data-inc="${k}" aria-label="Tambah">+</button></div></div>`}).join("")
+    : `<div class="empty">Belum ada pesanan.<br>Pilih menu lalu tekan tombol “+”.</div>`;
+  $("cartInputs").innerHTML = ids.map(k=>`<input type="hidden" name="items[${k}]" value="${cart[k]}">`).join("");
+  $("wa").disabled = !ids.length;
+}
+function render(){ renderButtons(); renderCart(); save(); }
+
+function filterMenu(slug){
+  document.querySelectorAll(".tab").forEach(b => b.setAttribute("aria-selected", b.dataset.c === slug));
+  document.querySelectorAll(".item").forEach(i => {
+    i.hidden = !(slug === "semua" || i.dataset.cat === slug);
+    i.classList.remove("filtered-in");
+    if (!i.hidden) { void i.offsetWidth; i.classList.add("in", "filtered-in"); }
+  });
+}
+let lastAdded = null;
+function added(id){
+  lastAdded = id;
+  render();
+  lastAdded = null;
+  window.bariBump?.($("openCart"));
+  window.bariToast?.(`${MENU[id].name} ditambahkan · ${cart[id]} di pesanan`);
+}
+function setTray(open){ $("tray").classList.toggle("open", open); $("tray").setAttribute("aria-hidden", !open); $("scrim").hidden = !open; }
+
+document.addEventListener("click", e => {
+  const t = e.target.closest("button"); if (!t) return;
+  if (t.dataset.c) filterMenu(t.dataset.c);
+  if (t.dataset.jump) { filterMenu(t.dataset.jump); $("menu").scrollIntoView(); }
+  if (t.dataset.id && MENU[t.dataset.id]) { cart[t.dataset.id] = (cart[t.dataset.id] || 0) + 1; added(t.dataset.id); if (t.dataset.open) setTray(true); }
+  if (t.dataset.inc) { cart[t.dataset.inc]++; lastAdded = t.dataset.inc; render(); lastAdded = null; }
+  if (t.dataset.dec) { cart[t.dataset.dec]--; if (cart[t.dataset.dec] <= 0) delete cart[t.dataset.dec]; render(); }
+});
+$("openCart").onclick = () => setTray(true);
+$("ctaOrder").onclick = () => setTray(true);
+$("closeCart").onclick = () => setTray(false);
+$("scrim").onclick = () => setTray(false);
+document.addEventListener("keydown", e => { if (e.key === "Escape") setTray(false); });
+render();
+// Demo statis: susun pesan WhatsApp di browser karena tidak ada server untuk menyimpan pesanan
+$("orderForm").addEventListener("submit", e => {
+  e.preventDefault();
+  const ids = Object.keys(cart);
+  if (!ids.length) return;
+  const nama = $("nama").value.trim();
+  if (!nama) { $("nama").focus(); return; }
+  const total = ids.reduce((s,k)=>s+cart[k]*MENU[k].price,0);
+  const msg = `Halo Bari Coffee, saya ${nama} mau pesan:\n`
+    + ids.map(k => `- ${cart[k]}x ${MENU[k].name} (${rp(MENU[k].price*cart[k])})`).join("\n")
+    + `\nTotal: ${rp(total)}\nDiambil: ${$("ambil").value}`;
+  window.open("https:\/\/wa.me\/6281234567890" + "?text=" + encodeURIComponent(msg), "_blank", "noopener");
+  cart = {}; render(); setTray(false);
+  window.bariToast?.("WhatsApp dibuka · keranjang dikosongkan");
+});
+</script>
+</body>
+</html>

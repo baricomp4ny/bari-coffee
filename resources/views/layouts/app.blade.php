@@ -3,7 +3,7 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-    <meta name="csrf-token" content="{{ csrf_token() }}">
+    @unless ($staticDemo)<meta name="csrf-token" content="{{ csrf_token() }}">@endunless
     <title>@yield('title', config('app.name', 'Bari Coffee'))</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Poppins:wght@400;500;600;700&display=swap">
@@ -56,7 +56,11 @@
         </div>
         <div class="copy">
             <span>© {{ date('Y') }} Bari Coffee · Proyek Digital Kreatif (data contoh)</span>
-            <span>Diseduh pelan di Bogor.</span>
+            @if ($staticDemo && $demoRepoUrl)
+                <span>Versi demo · <a href="{{ $demoRepoUrl }}" target="_blank" rel="noopener">Lihat kode di GitHub ↗</a></span>
+            @else
+                <span>Diseduh pelan di Bogor.</span>
+            @endif
         </div>
     </footer>
 </div>
