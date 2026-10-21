@@ -84,6 +84,8 @@ class BariCoffeeTest extends TestCase
         $this->assertStringContainsString('Es Kopi Gula Aren', $html);
         $this->assertStringContainsString('href="./css/bari.css', $html);
         $this->assertStringContainsString('src="./js/bari.js', $html);
+        $this->assertStringContainsString('src="./images/menu/hero-cup.webp"', $html);
+        $this->assertFileExists(base_path("{$path}/images/menu/es-kopi-gula-aren.webp"));
         $this->assertStringContainsString('Lihat kode di GitHub', $html);
         $this->assertStringNotContainsString('csrf-token', $html);
         $this->assertStringNotContainsString('name="_token"', $html);

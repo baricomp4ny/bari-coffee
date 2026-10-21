@@ -97,7 +97,7 @@ class MenuController extends Controller
 
     private function deletePhoto(Menu $menu): void
     {
-        if ($menu->photo) {
+        if ($menu->photo && ! $menu->hasBundledPhoto()) {
             Storage::disk('public')->delete($menu->photo);
         }
     }

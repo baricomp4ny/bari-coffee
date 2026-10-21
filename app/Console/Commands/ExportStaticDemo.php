@@ -33,7 +33,7 @@ class ExportStaticDemo extends Command
 
         $html = app(HomeController::class)->index()->render();
         // asset() tetap menghasilkan "/css/...", ubah jadi relatif untuk subfolder
-        $html = preg_replace('~(href|src)="/(css|js|storage)/~', '$1="./$2/', $html);
+        $html = preg_replace('~(href|src)="/(css|js|images|storage)/~', '$1="./$2/', $html);
 
         File::ensureDirectoryExists($dir);
         File::cleanDirectory($dir);
@@ -45,9 +45,12 @@ class ExportStaticDemo extends Command
             File::copy(public_path($asset), "{$dir}/{$asset}");
         }
 
-        // Foto menu yang diupload lewat admin ikut disalin
+        // Foto bawaan (public/images) dan foto upload admin (storage) ikut disalin
+        if (File::isDirectory(public_path('images'))) {
+            File::copyDirectory(public_path('images'), "{$dir}/images");
+        }
         $photos = 0;
-        foreach (Menu::whereNotNull('photo')->pluck('photo') as $photo) {
+        foreach (Menu::whereNotNull('photo')->where('photo', 'not like', 'images/%')->pluck('photo') as $photo) {
             $source = storage_path("app/public/{$photo}");
             if (File::exists($source)) {
                 File::ensureDirectoryExists(dirname("{$dir}/storage/{$photo}"));
@@ -56,7 +59,7 @@ class ExportStaticDemo extends Command
             }
         }
 
-        $this->info("Demo statis dibuat di {$this->option('path')}/ (".Menu::count()." menu, {$photos} foto).");
+        $this->info("Demo statis dibuat di {$this->option('path')}/ (".Menu::count()." menu, {$photos} foto upload admin).");
         $this->line('Buka index.html di browser untuk mencoba, lalu commit & push folder ini.');
 
         return self::SUCCESS;

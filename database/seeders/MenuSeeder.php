@@ -36,7 +36,7 @@ class MenuSeeder extends Seeder
         }
 
         foreach ($menus as [$cat, $name, $desc, $price, $tag, $light, $dark]) {
-            Menu::updateOrCreate(['name' => $name], [
+            $menu = Menu::updateOrCreate(['name' => $name], [
                 'category_id' => $categories[$cat]->id,
                 'description' => $desc,
                 'price' => $price,
@@ -45,6 +45,12 @@ class MenuSeeder extends Seeder
                 'color_light' => $light,
                 'color_dark' => $dark,
             ]);
+
+            // Foto bawaan (Unsplash, lihat README); foto yang sudah diupload admin tidak ditimpa
+            $photo = 'images/menu/'.Str::slug($name).'.webp';
+            if (! $menu->photo && file_exists(public_path($photo))) {
+                $menu->update(['photo' => $photo]);
+            }
         }
     }
 }

@@ -24,7 +24,17 @@
             </div>
         </div>
         <div class="hero-cup">
-            <x-cup art="heart" :handle="true" coffee="#B98654" crema="#EAD2AE" foam="#6A3014" />
+            <x-beans class="hero-beans" :count="22" :inner="150" :outer="198" :seed="5" />
+            <div class="hero-photo">
+                <img src="{{ asset('images/menu/hero-cup.webp') }}" alt="Secangkir cappuccino hangat dilihat dari atas" width="1200" height="1200" fetchpriority="high">
+            </div>
+            @if ($signature)
+                <button type="button" class="hero-chip add-btn" data-id="{{ $signature->id }}" data-open="1" aria-label="Pesan {{ $signature->name }}">
+                    @if ($signature->photo)<img src="{{ $signature->photo_url }}" alt="" width="44" height="44">@endif
+                    <span><small>Racikan andalan</small><strong>{{ $signature->name }}</strong></span>
+                    <b class="num">{{ rupiah($signature->price) }}</b>
+                </button>
+            @endif
         </div>
     </header>
 

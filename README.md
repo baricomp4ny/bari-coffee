@@ -104,6 +104,24 @@ php artisan test
 | Gaya & interaksi | `public/css/bari.css`, `public/js/bari.js` |
 | Data menu contoh | `database/seeders/MenuSeeder.php` |
 
+## Kredit foto
+
+Foto menu dan cangkir di beranda berasal dari [Unsplash](https://unsplash.com) ([Unsplash License](https://unsplash.com/license), bebas dipakai). Disimpan di `public/images/menu/` dan dipasang otomatis oleh `MenuSeeder`; foto yang diupload lewat admin akan menggantikannya.
+
+| Foto | Fotografer |
+|---|---|
+| Cangkir di beranda | [@mockupgraphics](https://unsplash.com/photos/white-ceramic-mug-with-brown-liquid-gkzFuyAeXeY) |
+| Es Kopi Gula Aren | [@demidearest](https://unsplash.com/photos/glass-cup-filled-with-ice-latte-on-tabletop-L-sm1B4L1Ns) |
+| Americano | [@19darkshadow98](https://unsplash.com/photos/steaming-cup-of-coffee-on-a-wooden-table-MK60jE_6zXU) |
+| Kafe Latte | [@frokz](https://unsplash.com/photos/cup-of-coffee-on-saucer-ZLqxSzvVr7I) |
+| V60 Kerinci | [@kvncnls](https://unsplash.com/photos/white-and-brown-liquid-in-stainless-steel-cup-WbdkFHDFbTg) |
+| Japanese Iced | [@kaffeemeister](https://unsplash.com/photos/macro-photography-of-dropping-ice-cube-in-cup-BIeXZhg_7sw) |
+| Matcha Latte | [@cherstve_pechivo](https://unsplash.com/photos/a-cup-of-matcha-latte-with-latte-art-U4kneR_s7bU) |
+| Cokelat Bari | [@giancarloduarte](https://unsplash.com/photos/photo-of-mug-with-hot-choco-RtHw0PWCLhw) |
+| Teh Serai Madu | [@reyhanphotos](https://unsplash.com/photos/clear-glass-cup-beside-cookies-AZxyTjkz3-g) |
+| Croissant Mentega | [@kobbymendez](https://unsplash.com/photos/bread-on-brown-wooden-tray-beside-white-ceramic-mug-iyM-XTsTiek) |
+| Pisang Goreng Keju | [@bybimoagmi](https://unsplash.com/photos/fried-bananas-sprinkled-with-brown-sugar-on-a-plate-4oGKCdrBDzE) |
+
 ---
 
 Data menu, alamat, dan nomor WhatsApp di proyek ini adalah data contoh.
